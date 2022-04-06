@@ -893,7 +893,7 @@ deployment plans of OpenAI or OpenAI's policies.
 
 With thanks to:
 
-Mohit Bansal, Vladimir Barash, Ana Carolina D N S Da Hora, Jaemin Cho,
+Mohit Bansal, Vladimir Barash, Ana Carolina D N S Da Hora, Jaemin Cho, Lia Coleman,
 Victor do Nascimento Silva, Shahar Edgerton Avin, Zivvy Epstein, Matthew
 Groh, Vipul Gupta, Jack Hessel, Liwei Jiang, Yeheun Jun, Ximing Lu, Sam
 Manning, Micaela Mantegna, Alex Newhouse, Marcelo Rinesi, Hannah Rose
