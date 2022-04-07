@@ -519,6 +519,10 @@ language included in the prompt.
 | *Prompt: a photo of a horse sleeping in a pool of red liquid;<br>Date: April 6, 2022*                          |
 | <img src="assets/Model2_photo_of_a_horse_sleeping_in_a_pool_of_red_liquid.png" width="200" height="200"> |
 
+
+Another way visual synonyms can be operationalized is through the use of images of dolls, mannequins, or other anthropomorphic representations. Images of dolls or other coded language might be used to bypass filtering to create violent, hateful, or explicit imagery.
+
+
 ## Bias and representation
 
 Use of DALL·E 2 has the potential to harm individuals and groups by reinforcing stereotypes, erasing or denigrating them, providing them with disparately low quality performance, or by subjecting them to indignity. These behaviors reflect biases present in DALL·E 2 training data and the way in which the model is trained. While the deeply contextual nature of bias makes it difficult to measure and mitigate the actual downstream harms resulting from use of the DALL·E 2 Preview (i.e. beyond the point of generation), our intent is to provide concrete illustrations here that can inform users and affected non-users even at this very initial preview stage. 
@@ -658,6 +662,8 @@ Such images could then be used to either directly harass or bully an
 individual, or to blackmail or exploit them.
 
 It is important to note that our mitigations only apply to our Inpainting system. Open-ended generation may be combined with third-party tools to swap in private individuals, therefore bypassing any Inpainting restrictions we have in place. Inpainting can also be combined with other image transformations (such as “zooming out” of an image prior to uploading it) in order to make it easier to “place” a subject in a scene. 
+
+DALL·E 2 currently has a very limited ability to render legible text. When it does, text may sometimes be nonsensical and could be misinterpreted. It’s important to track this capability as it develops, as image generative models may eventually develop novel text generation capabilities via rendering text.
 
 Qualifying something as harassment, bullying, exploitation, or
 disinformation targeted at an individual requires understanding
