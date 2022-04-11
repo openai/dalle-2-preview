@@ -51,7 +51,7 @@ technologies](#relation-to-existing-technologies)
 
 [Glossary of terms](#glossary-of-terms)
 
-Last updated: April 6, 2022
+Last updated: April 11, 2022
 
 # Introduction
 
