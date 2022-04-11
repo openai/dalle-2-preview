@@ -157,7 +157,7 @@ For additional resources on DALL·E 1 and Glide, see:
 
 -   DALL·E 1: [Paper](https://arxiv.org/abs/2102.12092), [Model Card](https://github.com/openai/DALL-E/blob/master/model_card.md), [Blog post](https://openai.com/blog/dall-e/)
 
--   GLIDE: [Paper](https://arxiv.org/abs/2112.10741), [code and weights](https://github.com/openai/glide-text2im.)
+-   GLIDE: [Paper](https://arxiv.org/abs/2112.10741), [code and weights](https://github.com/openai/glide-text2im)
 
 ## Restrictions
 
