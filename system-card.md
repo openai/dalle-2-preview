@@ -625,53 +625,7 @@ Moreover, this disparity in the level of specification and steering needed to pr
 
 ## Harassment, bullying, and exploitation
 
-Targeted harassment, bullying, or exploitation of individuals is a
-principal area of concern for deployment of image generation models
-broadly and Inpainting in particular.
-
-Inpainting – especially combined with the ability to upload images – 
-allows for a high degree of freedom in modifying images of people and their
-visual context. While other image editing tools are able to achieve
-similar outcomes, Inpainting affords greater speed, scale, and efficiency.
-Many photo editing tools also require potentially costly access and/or a
-particular skill set to achieve photorealistic outcomes. Cheaper and more accessible
-options than photo editing exist, for instance tools that allow for
-simple face swapping may offer speed and efficiency, but over a much
-more narrow set of capabilities and often with the ability to clearly
-trace provenance of the given images.
-
-In qualitative evaluations, we find that the system, even with current
-mitigations in place, can still be used to generate images that may be
-harmful in particular contexts and difficult for any reactive response
-team to identify and catch.[^6] This underscores the importance of
-access controls and further investment in more robust mitigations, as
-well as tight monitoring of how capabilities with a high capacity for
-misuse – e.g. Inpainting on images of people – are being used and
-shared in practice.
-
-Some examples of this that could only be clear as policy violations in
-context include:
-
--   *Modifying clothing:* adding or removing religious items of clothing (yarmulke, hijab)
-
--   *Adding specific food items to pictures*: adding meat to an image of an individual who is vegetarian
-
--   *Adding additional people to an image:* inpainting a person into an image holding hands with the original subject (e.g. someone who is not their spouse)
-
-Such images could then be used to either directly harass or bully an
-individual, or to blackmail or exploit them.
-
-It is important to note that our mitigations only apply to our Inpainting system. Open-ended generation may be combined with third-party tools to swap in private individuals, therefore bypassing any Inpainting restrictions we have in place. Inpainting can also be combined with other image transformations (such as “zooming out” of an image prior to uploading it) in order to make it easier to “place” a subject in a scene. 
-
-DALL·E 2 currently has a very limited ability to render legible text. When it does, text may sometimes be nonsensical and could be misinterpreted. It’s important to track this capability as it develops, as image generative models may eventually develop novel text generation capabilities via rendering text.
-
-Qualifying something as harassment, bullying, exploitation, or
-disinformation targeted at an individual requires understanding
-distribution and interpretation of the image. Because of this, it may be
-difficult for mitigations (including content policies, prompt and image
-filtering, and human in the loop review) to catch superficially
-innocuous uses of Inpainting that then result in the spread of harmful
-dis- or misinformation.
+![](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/check-mark-button_2705.png)
 
 ### Memorization of an individual's pictures and issues of consent
 
