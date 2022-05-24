@@ -900,7 +900,7 @@ With thanks to:
 
 Mohit Bansal, Vladimir Barash, Ana Carolina D N S Da Hora, Jaemin Cho, Lia Coleman,
 Victor do Nascimento Silva, Shahar Edgerton Avin, Zivvy Epstein, Matthew
-Groh, Vipul Gupta, Jack Hessel, Liwei Jiang, Yeheun Jun, Ximing Lu, Sam
+Groh, Vipul Gupta, Jack Hessel, Liwei Jiang, Yennie Jun, Ximing Lu, Sam
 Manning, Micaela Mantegna, Alex Newhouse, Marcelo Rinesi, Hannah Rose
 Kirk, Maarten Sap, Neerja Thakkar, Angelina Wang, Abhay Zala
 
