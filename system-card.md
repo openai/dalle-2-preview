@@ -1,5 +1,7 @@
 # DALL·E 2 Preview - Risks and Limitations
 
+### Note: This document summarizes the initial risk analysis and mitigations for the DALL·E 2 system and is only up to date as of April, 2022. Please see the [OpenAI Blog](https://openai.com/blog/) for more up-to-date information.
+
 **Summary**
 
 -   Below, we summarize initial findings on potential risks associated with DALL·E 2, and mitigations aimed at addressing those risks as part of the ongoing Preview of this technology. We are sharing these findings in order to enable broader understanding of image generation and modification technology and some of the associated risks, and to provide additional context for users of the DALL·E 2 Preview.
@@ -89,9 +91,6 @@ violence; and finally, copyright and memorization. Fourth, we discuss
 how DALL·E 2 compares with, and might be combined with, existing
 technologies. Fifth and finally, we describe future work that could shed
 further light on some of the risks and mitigations discussed.
-
-This document is expected to evolve in the coming weeks as we update
-deployment plans and learn more about the system and model.
 
 # System Components
 
@@ -204,28 +203,9 @@ At this stage we are not allowing programmatic access to the model by non-OpenAI
 
 ### Access
 
-We currently maintain strict access limitations. Up to 400 trusted users (with that number including OpenAI employees) are initially being provided access to the DALL·E 2 Preview. More specifically, access is currently restricted to: 
+Accesss is currently gained via a waitlist -- ensuring trust by monitoring adherence to our content policy and terms.
 
-* 200 OpenAI employees; 
-
-* A few dozen researchers – currently 25, with a few more in the pipeline – whose aim is "red teaming" the system (we describe this process further in the "Process" section below);
-
-* 10 creatives;
-
-* 165 "company friends" (OpenAI Board members, a small number of Microsoft employees, limited number of friends/family of OpenAI employees, etc.). 
-
-Trust is ensured by users being personally known to and vetted by OpenAI employees, and the 400 person cap keeps system throughput low enough to allow for human review
-of generated content and potential misuse.
-
-These access limitations are in line with the paradigm of structured
-capability access that informed the deployment of GPT-3 ([Shevlane et
-al., 2022](https://arxiv.org/pdf/2201.05159.pdf)), and what
-[we](https://openai.com/blog/language-model-safety-and-misuse/)
-have recently outlined as a part of our deployment strategy including
-both pre-deployment risk analysis and starting with a small group of
-users with the intention of continuous iteration.
-
-These strict access mitigations have limitations. For example, the power
+Access mitigations have limitations. For example, the power
 to control use of a particular generated image diminishes the moment an
 image leaves the platform. Because trust declines the second images are
 shared off the platform – where affected parties may include not just
@@ -235,9 +215,7 @@ Further, restricting access means access to the DALL•E 2 Preview is not
 granted in an inclusive way, which may preferentially benefit certain
 groups.
 
-Despite these limitations, we believe limited access is overall the
-right starting point for this technology. During the current phase of
-deployment, we will aim to get as much signal as possible on the exact
+By expanding access, we aim to get as much signal as possible on the exact
 vectors of risk from the platform. We will support this through ongoing
 access for researchers and experts who will help inform our
 understanding of the effectiveness of mitigations as well as the
@@ -563,7 +541,7 @@ For example, when prompted with “wedding,” it tends to assume Western weddin
 
 With added capabilities of the model (Inpainting and Variations), there may be additional ways that bias can be exhibited through various uses of these capabilities. [Wang et al. (2020)](https://arxiv.org/abs/2004.07999), and [Steed and Caliskan (2021)](https://dl.acm.org/doi/pdf/10.1145/3442188.3445932) have previously conducted social bias analyses on related topics of image classification models and visual datasets, and [Cho et al. (2022)](https://arxiv.org/abs/2202.04053) propose methods for quantitative evaluation of social biases for Text to Image generative models. 
 
-Some of these researchers, and others with whom we worked as part of the red teaming period, analyzed earlier iterations of the DALL·E 2 Preview and the underlying model and found significant bias in how the model represents people and concepts, both in what the model generates when a prompt is “underspecified” and potentially fits a vast array of images (e.g. the “CEO” example above), and in what the model generates when a prompt is hyper-specified (see further discussion below on disparate performance). 
+Some of these researchers, and others with whom we worked as part of the red teaming period, analyzed earlier iterations of the DALL·E 2 Preview and the underlying model and found significant bias in how the model represents people and concepts, both in what the model generates when a prompt is “underspecified” and potentially fits a vast array of images (e.g. the “CEO” example above), and in what the model generates when a prompt is hyper-specified (see further discussion below on disparate performance). **[Recent mitigations](https://openai.com/blog/reducing-bias-and-improving-safety-in-dall-e-2/) have partially addressed the issue of underspecified prompts requesting images of humans.**
 
 We are in the early stages of quantitatively evaluating DALL·E 2’s biases, which is particularly challenging at a system level, due to the filters discussed above, and due to model changes. Additionally, it remains to be seen to what extent our evaluations or other academic benchmarks will generalize to real-world use, and academic benchmarks (and quantitative bias evaluations generally) have known limitations. Cho et al., creators of DALL-Eval, compared an April 1, 2022 checkpoint of DALL·E 2 to minDALL-E. They found that the April 1 DALL·E 2 checkpoint exhibited more gender bias and racial bias than minDALL-E (i.e. tending to generate images of male-passing people more often and White-passing people more often, with both models having very strong tendencies toward generating images labeled as male and Hispanic by CLIP). This could reflect differences in the underlying datasets (minDALL-E is trained on Conceptual Captions data), a difference in the models’ sizes or training objectives, or other factors, which more research would be needed in order to disentangle.
 
