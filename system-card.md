@@ -889,7 +889,7 @@ Please use the following BibTeX entry:
     @article{mishkin2022risks,
       title={DALL·E 2 Preview - Risks and Limitations},
       author={Mishkin, Pamela and Ahmad, Lama and Brundage, Miles and Krueger, Gretchen and Sastry, Girish},
-      year={2022}
+      year={2022},
       url={[https://github.com/openai/dalle-2-preview/blob/main/system-card.md](https://github.com/openai/dalle-2-preview/blob/main/system-card.md)}
     }
 
